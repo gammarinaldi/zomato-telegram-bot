@@ -29,7 +29,7 @@ A robust RESTful API and Telegram Bot integration built with Laravel 13, providi
 - **Database**: PostgreSQL
 - **Auth**: JWT (tymon/jwt-auth fork), Google 2FA
 - **Testing**: PHPUnit
-- **API Documentation**: Fern by Postman [Zomato Bot API Docs](https://api-team-zomato-bot.docs.buildwithfern.com/zomato-bot-api/introduction)
+- **API Documentation**: Postman [Zomato Bot API Docs](https://documenter.getpostman.com/view/6204270/2sBXqJMMSD)
 
 ## 📥 Installation
 
@@ -98,7 +98,7 @@ The project includes a built-in dashboard to monitor API requests in real-time.
 
 ## 📖 Documentation
 
-- **API Documentation**: Official API reference can be found at [Zomato Bot API Docs](https://api-team-zomato-bot.docs.buildwithfern.com/zomato-bot-api/introduction).
+- **API Documentation**: Official API reference can be found at [Zomato Bot API Docs](https://documenter.getpostman.com/view/6204270/2sBXqJMMSD).
 - **Verification Report**: Full project compliance report is available in [docs/superpowers/verification_report.md](docs/superpowers/verification_report.md).
 
 ## 📄 License
