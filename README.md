@@ -13,7 +13,7 @@ A robust RESTful API and Telegram Bot integration built with Laravel 13, providi
     - Search for restaurants by keyword or current location.
 - **API Monitoring & Logging**:
     - Custom middleware to capture comprehensive request metadata (IP, Headers, Body, Method).
-    - Web dashboard to view and monitor API activity.
+    - Web dashboard to view and monitor API activity (available at `/logs`).
 - **Database**: 
     - Optimized for **PostgreSQL**.
 - **Design Patterns**:
@@ -29,7 +29,7 @@ A robust RESTful API and Telegram Bot integration built with Laravel 13, providi
 - **Database**: PostgreSQL
 - **Auth**: JWT (tymon/jwt-auth fork), Google 2FA
 - **Testing**: PHPUnit
-- **API Documentation**: Postman
+- **API Documentation**: Fern by Postman [Zomato Bot API Docs](https://api-team-zomato-bot.docs.buildwithfern.com/zomato-bot-api/introduction)
 
 ## 📥 Installation
 
@@ -88,6 +88,13 @@ Run specific test layers:
 | **Repositories** | `./vendor/bin/phpunit tests/Unit/Repositories` |
 | **Middleware** | `./vendor/bin/phpunit tests/Unit/Middleware` |
 | **Feature Tests** | `./vendor/bin/phpunit tests/Feature` |
+
+## 📊 Monitoring
+
+The project includes a built-in dashboard to monitor API requests in real-time.
+
+- **Dashboard URL**: `/logs` (e.g., [http://127.0.0.1:8000/logs](http://127.0.0.1:8000/logs))
+- **Features**: Track request methods, URLs, status codes, IP addresses, and JSON payloads.
 
 ## 📖 Documentation
 
