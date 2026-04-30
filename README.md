@@ -91,7 +91,7 @@ Run specific test layers:
 
 ## 📖 Documentation
 
-- **API Documentation**: Detailed Postman collection documentation can be found in [docs/postman.md](docs/postman.md).
+- **API Documentation**: Official API reference can be found at [Zomato Bot API Docs](https://api-team-zomato-bot.docs.buildwithfern.com/zomato-bot-api/introduction).
 - **Verification Report**: Full project compliance report is available in [docs/superpowers/verification_report.md](docs/superpowers/verification_report.md).
 
 ## 📄 License

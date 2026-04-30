@@ -10,9 +10,18 @@ use Illuminate\Support\Facades\Validator;
 use App\Repositories\Interfaces\UserRepositoryInterface;
 use PragmaRX\Google2FALaravel\Support\Authenticator;
 use PragmaRX\Google2FA\Google2FA;
+use Illuminate\Routing\Controllers\HasMiddleware;
+use Illuminate\Routing\Controllers\Middleware;
 
-class AuthController extends Controller
+class AuthController extends Controller implements HasMiddleware
 {
+    public static function middleware(): array
+    {
+        return [
+            new Middleware('auth:api', except: ['login', 'register', 'verify2fa']),
+        ];
+    }
+
     protected $userRepository;
 
     /**
@@ -23,7 +32,6 @@ class AuthController extends Controller
     public function __construct(UserRepositoryInterface $userRepository)
     {
         $this->userRepository = $userRepository;
-        $this->middleware('auth:api', ['except' => ['login', 'register', 'verify2fa']]);
     }
 
     /**
