@@ -1,7 +1,10 @@
 {
+    "name": "zomato-telegram-bot",
+    "description": "Zomato Telegram Chat Bot integration",
     "$schema": "https://www.schemastore.org/package.json",
     "private": true,
     "type": "module",
+    "license": "MIT",
     "scripts": {
         "build": "vite build",
         "dev": "vite"
